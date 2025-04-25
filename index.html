@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhiyuan Ma - Resume</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="header-left">
+                    <h1>ZHIYUAN MA</h1>
+                    <div class="education-container">
+                        <p class="education-item-header"><i class="fas fa-graduation-cap"></i> <span>Master, Computer Science - UC Irvine, 2022</span></p>
+                        <p class="education-item-header"><i class="fas fa-graduation-cap"></i> <span>Bachelor, Computer Science - Shanghai Jiao Tong University, 2021</span></p>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <p><i class="fas fa-phone-alt"></i> 949-994-0870</p>
+                    <p><i class="fas fa-envelope"></i> zhiyuanma0520@gmail.com</p>
+                    <p><i class="fab fa-linkedin-in"></i> linkedin.com/in/zhiyuanmatech</p>
+                    <p><i class="fab fa-github"></i> github.com/MaCoredroid</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="professional-summary">
+            <p>Shipped GenAI agents that surface Salesforce insights 90 % faster and a plug-and-play loan-origination engine that slashed client onboarding from 12 mo → 2 mo; co-founded LawPorter (50 K-claim bankruptcy SaaS, 99.99 % uptime) and open-sourcing Cenvoy, a Chrome/iOS agent-builder that turns any highlight into chainable LLM workflows.</p>
+        </div>
+
+        <section id="experience">
+            <div class="job">
+                <div class="job-header">
+                    <p class="company">Salesforce - Software Engineer <span class="date">May 2023 – Now</span></p>
+                </div>
+                <h3 class="project-title"><a href="https://www.salesforce.com/agentforce/" target="_blank" style="color: inherit; text-decoration: none;">GenAI Agent Platform (Agentforce)</a></h3>
+                <ul>
+                    <li>Built plan-then-execute agent flows (<strong>Java/Python + LangChain</strong>) that enables LLMs to query Salesforce data and trigger workflows autonomously, cutting manual insight-surfacing time 90%.</li>
+                    <li>Implemented a <strong>zero</strong>-<strong>trust layer</strong> field-masking that redacts 100 % of PII from LLM prompts.</li>
+                    <li>Instrumented <strong>fine-grained latency / success telemetry </strong> for LLM Actions, feeding A/B prompt experiments that lifted task success rate from 82% to 94%.</li>
+                </ul>
+                <h3 class="project-title"><a href="https://www.salesforce.com/financial-services/digital-lending-software/" target="_blank" style="color: inherit; text-decoration: none;">Digital Lending Platform</a></h3>
+                <ul>
+                    <li>Engineered a modular loan-origination stack (Java | JavaScript | Salesforce OmniStudio) that reduced client implementation time from <strong>12 months</strong> to <strong>2 months</strong> (<strong>-83%</strong>) and cut maintenance costs <strong>75%</strong>.</li>
+                    <li>Directed the configurator roadmap for a four-engineer squad and raised quoting throughput <strong>5×</strong> by introducing end-to-end Redis-based caching, lowering database traffic <strong>80%</strong>.</li>
+                    <li>Mentored four engineers, published a 30-page playbook adopted org-wide, and kept 100 % of 18 quarterly epics on or ahead of schedule.</li>
+                    <li>Deployed a one-click sample-data generator that provisions trial orgs in <strong>&lt; 1 hour</strong>, enabling <strong>1000+</strong> self-serve demos per month and reclaiming <strong>19 developer hours</strong> per deployment.</li>
+                </ul>
+                <p class="skills-used"><strong>Skills:</strong> <strong>Java</strong>, <strong>Python</strong>, </strong><strong>JavaScript</strong>, <strong>LangChain</strong>, <strong>LLM</strong>, <strong>Redis</strong>, <strong>GenAI</strong></p>
+
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <p class="company"><a href="https://www.lawporter.com/" target="_blank" style="color: inherit; text-decoration: none;">LawPorter</a> - Founding Engineer <span class="date">Sep 2019 – Jun 2021</span></p>
+                </div>
+                <ul>
+                    <li>Spearheaded design & build of a Kubernetes-based bankruptcy SaaS handling <strong>1K+ companies</strong>, <strong>50K claims</strong>, <strong>22K creditors</strong> with <strong>99.99 % uptime</strong>, leading a 5-engineer team.</li>
+                    <li>Cut support MTTR 85 % (5 h to 40 min) by rolling out <strong>Elastic/Fluentd dashboards</strong>.</li>
+                    <li>Instituted <strong>Drone-based CI/CD</strong> and <strong>Istio canary roll-outs</strong>, enabling zero-downtime releases.</li>
+                    <li>Re-platformed <strong></strong>120 GB of relational data</strong> to <strong>MongoDB</strong>, enabling per-tenant schema evolution.</li>
+                </ul>
+                <p class="skills-used"><strong>Skills:</strong> <strong>Java</strong>,<strong>Go</strong> <strong>React.js</strong>, <strong>Spring Boot</strong>, <strong>SQL</strong>, <strong>Redis</strong>, <strong>Kubernetes</strong>, <strong>Docker</strong>, <strong>Elastic Stack</strong>, <strong>AWS</strong>, <strong>GCP</strong></p>
+
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <p class="company">Project: Cenvoy - Build Your Own Agent (Chrome & iOS) <span class="date">2025</span></p>
+                </div>
+                <ul>
+                    <li>Launched and open-sourced a Chrome-extension "agent builder" that turns any highlighted text into LLM workflows; built with <strong>LangChain + JavaScript</strong>, it supports <strong>meta-prompting</strong> and <strong>chainable AI workflows</strong>.</li>
+                    <li>Shipped a companion iOS app featuring <strong>Picture-in-Picture overlays</strong>, <strong>context-aware personalization</strong>, and <strong>deep Shortcuts hooks</strong> that let users fire AI automations from any screen.</li>
+                </ul>
+                <p class="skills-used"><strong>Skills:</strong> <strong>LangChain</strong>, <strong>JavaScript</strong>, <strong>Swift</strong>, <Strong>C++</Strong>, <strong>PyTorch</strong>, <strong>LLMs</strong>, <strong>AI Workflows</strong></p>
+
+            </div>
+        </section>
+    </div>
+</body>
+</html> 
