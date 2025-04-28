@@ -268,6 +268,37 @@ section {
     color: var(--accent-color);
 }
 
+/* Black project title */
+.black-title {
+    color: #000000;
+}
+
+/* URL link styling */
+.url-link {
+    margin-left: 2px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: -1px;
+}
+
+.url-link i {
+    color: var(--primary-color);
+    font-size: 12px;
+    opacity: 0.7;
+    transition: transform 0.2s, color 0.2s, opacity 0.2s;
+}
+
+.url-link:hover i {
+    color: var(--accent-color);
+    opacity: 1;
+    transform: scale(1.2);
+}
+
 /* Lists */
 ul {
     padding-left: 20px;
