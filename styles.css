@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 :root {
@@ -416,6 +418,8 @@ a:hover {
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
         color-adjust: exact !important;
+        word-break: normal;
+        overflow-wrap: break-word;
     }
     
     .container {
@@ -478,6 +482,8 @@ a:hover {
         font-size: 11pt;
         background-color: var(--light-gray) !important;
         border-left: 3px solid var(--primary-color) !important;
+        white-space: normal;
+        word-break: normal;
     }
     
     section {
@@ -500,6 +506,8 @@ a:hover {
     li {
         font-size: 10pt;
         margin-bottom: 4px;
+        white-space: normal;
+        word-break: normal;
     }
     
     .project-title {
