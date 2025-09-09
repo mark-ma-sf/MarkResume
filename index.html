@@ -29,7 +29,7 @@
         </header>
 
         <div class="professional-summary">
-            <p>Shipped GenAI agents that surface Salesforce insights 90 % faster and a plug-and-play loan-origination engine that slashed client onboarding from 12 mo → 2 mo; co-founded LawPorter (50 K-claim bankruptcy SaaS, 99.99 % uptime) and open-sourcing Cenvoy, a Chrome/iOS agent-builder that turns any highlight into chainable LLM workflows.</p>
+            <p>Shipped GenAI agents that surface Salesforce insights 90% faster and a plug-and-play loan-origination engine that slashed client onboarding from 12 mo to 2 mo; co-founded LawPorter (50K-claim bankruptcy SaaS, 99.99% uptime) and built Lumorik—an AI tutor platform with cost-aware usage caps, “chat-with-PDFs” retrieval, and real-time voice lectures.</p>
         </div>
 
         <section id="experience">
@@ -37,20 +37,18 @@
                 <div class="job-header">
                     <p class="company">Salesforce - Software Engineer <span class="date">May 2023 – Now</span></p>
                 </div>
-                <h3 class="project-title black-title">GenAI Agent Platform (Agentforce) <a href="https://www.salesforce.com/agentforce/" target="_blank" class="url-link"><i class="fas fa-paperclip"></i></a></h3>
+                <h3 class="project-title black-title">Agentforce (GenAI Agent Platform) <a href="https://www.salesforce.com/agentforce/" target="_blank" class="url-link"><i class="fas fa-paperclip"></i></a></h3>
                 <ul>
-                    <li>Built plan-then-execute agent flows (<strong>Java/Python + LangChain</strong>) that enables LLMs to query Salesforce data and trigger workflows autonomously, cutting manual insight-surfacing time 90%.</li>
-                    <li>Built a <strong>zero-trust masking layer</strong> that removes sensitive data in LLM prompt and re-hydrates on return.</li>
-                    <li>Instrumented <strong>fine-grained latency / success telemetry </strong> for LLM Actions, feeding A/B prompt experiments that lifted task success rate from 82% to 94%.</li>
+                    <li>Delivered <strong>plan‑then‑execute agents</strong> (<strong>Java/Python</strong>, <strong>LangChain</strong>) that query Salesforce data and trigger workflows, cutting insight‑surfacing time <strong>~90%</strong>.</li>
+                    <li>Instrumented <strong>fine‑grained latency/success telemetry</strong> and <strong>A/B prompt</strong> experiments, lifting task success <strong>82% to 94%</strong>; added <strong>PII masking/rehydration</strong> into the pipeline.</li>
+                    <li>Hardened the agent runtime for reliability with <strong>timeouts</strong>, <strong>retries/backoff</strong>, <strong>circuit breakers</strong>, <strong>per‑tool rate limits</strong>, and <strong>embedding/prompt caches</strong>—cut user‑visible failures <strong>~55%</strong> (<strong>3.6% to 1.6%</strong>), improved <strong>p95 latency ~22%</strong>, and kept task success within <strong>±1 pp</strong> across <strong>3 model/provider incidents</strong>.</li>
+                    <li>Implemented <strong>cost governance</strong> and <strong>dynamic model routing</strong> (<strong>small-to-large fallback</strong>, <strong>context budgeting</strong>, <strong>tool‑only paths</strong>) with quality holdouts—reduced <strong>tokens/session ~30%</strong> (median) and <strong>LLM spend ~25%</strong>, with <strong>≤1 pp</strong> change in answer acceptance; added <strong>tier‑based spend caps</strong> and <strong>audit logs</strong>.</li>
                 </ul>
                 <h3 class="project-title black-title">Digital Lending Platform <a href="https://www.salesforce.com/financial-services/digital-lending-software/" target="_blank" class="url-link"><i class="fas fa-paperclip"></i></a></h3>
                 <ul>
-                    <li>Engineered a modular loan-origination stack (Java | JavaScript | Salesforce OmniStudio) that reduced client implementation time from <strong>12 months</strong> to <strong>2 months</strong> (<strong>-83%</strong>) and cut maintenance costs <strong>75%</strong>.</li>
-                    <li>Led a four-engineer team to re-architect the quoting API with <strong>Redis caching</strong>, slashing database load <strong>80%</strong> and boosting quote throughput <strong>5×</strong>.</li>
-                    <li>Mentored four engineers, published a 30-page playbook adopted org-wide, and kept 100 % of 18 quarterly epics on or ahead of schedule.</li>
-                    <li>Deployed a one-click sample-data generator that provisions trial orgs in <strong>&lt; 1 hour</strong>, enabling <strong>1000+</strong> self-serve demos per month and reclaiming <strong>19 developer hours</strong> per deployment.</li>
+                    <li>Built a <strong>modular loan‑origination</strong> stack (<strong>Java/JS/OmniStudio</strong>) reducing client implementation <strong>12 mo to 2 mo</strong> and cutting maintenance costs <strong>~75%</strong>.</li>
+                    <li>Re‑architected quoting API with <strong>Redis caching</strong>, reducing DB load <strong>~80%</strong> and boosting quote throughput <strong>5×</strong>; enabled <strong>self‑serve demos</strong> via one‑click sample data.</li>
                 </ul>
-                <p class="skills-used"><strong>Skills:</strong> <strong>Java</strong>, <strong>Python</strong>, </strong><strong>JavaScript</strong>, <strong>LangChain</strong>, <strong>LLM</strong>, <strong>Redis</strong>, <strong>GenAI</strong></p>
 
             </div>
             
@@ -59,26 +57,27 @@
                     <p class="company">LawPorter - Founding Engineer <a href="https://www.lawporter.com/" target="_blank" class="url-link"><i class="fas fa-paperclip"></i></a> <span class="date">Sep 2019 – Jun 2021</span></p>
                 </div>
                 <ul>
-                    <li>Spearheaded design & build of a Kubernetes-based bankruptcy SaaS handling <strong>1K+ companies</strong>, <strong>50K claims</strong>, <strong>22K creditors</strong> with <strong>99.99 % uptime</strong>, leading a 5-engineer team.</li>
-                    <li>Cut support MTTR 85 % (5 h to 40 min) by rolling out <strong>Elastic/Fluentd dashboards</strong>.</li>
-                    <li>Instituted <strong>Drone-based CI/CD</strong> and <strong>Istio canary roll-outs</strong>, enabling zero-downtime releases.</li>
-                    <li>Re-platformed <strong></strong>120 GB of relational data</strong> to <strong>MongoDB</strong>, enabling per-tenant schema evolution.</li>
+                    <li>Led a <strong>5‑engineer</strong> team to ship a Kubernetes‑based bankruptcy SaaS handling <strong>1K+ companies</strong> / <strong>50K claims</strong> / <strong>22K creditors</strong> with <strong>99.99%</strong> uptime.</li>
+                    <li>Cut support <strong>MTTR 5h to 40m</strong> with <strong>Elastic/Fluentd</strong> dashboards; implemented <strong>Drone CI/CD</strong> + <strong>Istio canaries</strong> for zero‑downtime releases.</li>
                 </ul>
-                <p class="skills-used"><strong>Skills:</strong> <strong>Java</strong>,<strong>Go</strong> <strong>React.js</strong>, <strong>Spring Boot</strong>, <strong>SQL</strong>, <strong>Redis</strong>, <strong>Kubernetes</strong>, <strong>Docker</strong>, <strong>Elastic Stack</strong>, <strong>AWS</strong>, <strong>GCP</strong></p>
 
             </div>
             
             <div class="job">
                 <div class="job-header">
-                    <p class="company">Project: Cenvoy - Build Your Own Agent (Chrome & iOS) <a href="https://mark-ma-sf.github.io/CenvoyDemo/" target="_blank" class="url-link"><i class="fas fa-paperclip"></i></a> <span class="date">2025</span></p>
+                    <p class="company">Project: Lumorik — AI Tutor Platform (LLM/Agents) <a href="https://ai.tutor.lumorik.com" target="_blank" class="url-link"><i class="fas fa-paperclip"></i></a> <span class="date">2025</span></p>
                 </div>
                 <ul>
-                    <li>Launched and open-sourced a Chrome-extension "agent builder" that turns any highlighted text into LLM workflows; built with <strong>LangChain + JavaScript</strong>, it supports <strong>meta-prompting</strong> and <strong>chainable AI workflows</strong>.</li>
-                    <li>Shipped a companion iOS app featuring <strong>Picture-in-Picture overlays</strong>, <strong>context-aware personalization</strong>, and <strong>deep Shortcuts hooks</strong> that let users fire AI automations from any screen.</li>
+                    <li>Shipped a <strong>goal‑to‑plan engine</strong> that generates bite‑size <strong>"textbook" chapters</strong> + <strong>voice coaching</strong>; <strong>streaming responses</strong> reduced <strong>time‑to‑first‑answer</strong>.</li>
+                    <li>Launched <strong>Chat with your PDFs</strong> with <strong>page‑linked citations</strong> (<strong>Qdrant RAG</strong> + <strong>page‑prioritized retrieval</strong>) so <strong>answers appear instantly</strong> while the rest loads; conversations persist with the document.</li>
+                    <li>Built <strong>real‑time lecture mode</strong> (<strong>WebSocket</strong>) that <strong>highlights the live section</strong> and <strong>auto‑archives</strong> recordings/transcripts/insights to a <strong>private knowledge base</strong> (<strong>container‑isolated code agent</strong>).</li>
                 </ul>
-                <p class="skills-used"><strong>Skills:</strong> <strong>LangChain</strong>, <strong>JavaScript</strong>, <strong>Swift</strong>, <Strong>C++</Strong>, <strong>PyTorch</strong>, <strong>LLMs</strong>, <strong>AI Workflows</strong></p>
 
             </div>
+        </section>
+
+        <section id="skills" style="margin-top: -10px;">
+            <p class="skills-used"><strong>Skills:</strong> <strong>Java</strong>, <strong>Python</strong>, <strong>JavaScript</strong>, <strong>Go</strong>, <strong>SQL</strong>, <strong>Spring Boot</strong>, <strong>FastAPI</strong>, <strong>React.js</strong>, <strong>LangChain</strong>, <strong>LLM</strong>, <strong>GenAI</strong>, <strong>OpenAI</strong>, <strong>RAG</strong>, <strong>Qdrant</strong>, <strong>Docker</strong>, <strong>Kubernetes</strong>, <strong>AWS</strong>, <strong>GCP</strong>, <strong>Redis</strong>, <strong>PostgreSQL</strong>, <strong>Elastic Stack</strong>, <strong>WebSocket</strong></p>
         </section>
     </div>
 </body>
