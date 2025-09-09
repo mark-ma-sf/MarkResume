@@ -244,6 +244,12 @@ section {
     padding-top: 0;
 }
 
+.skills-used {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    font-size: 14px !important;
+}
+
 /* Jobs */
 .job {
     margin-bottom: 18px;
