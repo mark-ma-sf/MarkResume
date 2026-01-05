@@ -34,8 +34,9 @@
                 </div>
                 <h3 class="project-title black-title">AWS Healthcare AI</h3>
                 <ul>
-                    <li>Owned an <strong>end-to-end PHI/PII de-identification pipeline</strong> on AWS (<strong>Bedrock + Claude 3 Haiku</strong>, <strong>Lambda</strong>, <strong>Step Functions</strong>, <strong>S3</strong>, <strong>DynamoDB</strong>), cutting noisy tokens/ASR artifacts by <strong>42%</strong>, <strong>+9.8-pt NER lift</strong>, and processing <strong>~120K notes/day</strong> at <strong>p95 1.6s</strong>.</li>
-                    <li>Owned the <strong>AVS generation pipeline</strong> that turns clinical notes + transcripts into structured summaries (<strong>SOAP/Assessment & Plan</strong>) with <strong>Claude 3 Haiku on Bedrock</strong>, cutting provider drafting time by <strong>63%</strong> (<strong>12→4.4 min</strong>) and boosting first-pass acceptance to <strong>78%</strong>.</li>
+                    <li>Owned an <strong>end-to-end PHI/PII de-identification pipeline</strong> across <strong>DynamoDB/Kinesis/Lambda/Step Functions/Glue</strong>; delivered the <strong>11/14 launch</strong> by adding <strong>CI integration tests (Hydra)</strong> as a <strong>release gate</strong> and owning the <strong>design → deploy → test-gate</strong> path.</li>
+                    <li>Drove <strong>AppSec readiness</strong> to sign-off by coordinating with security engineers and implementing required remediations as part of the <strong>critical path</strong> (not post-launch hardening).</li>
+                    <li>Unblocked <strong>demo/beta timelines</strong> under shifting science outputs and <strong>LLM platform constraints</strong> (e.g., regional availability for fine-tune/model copy) by shipping <strong>pragmatic fallbacks</strong> and extending <strong>model-service pipelines</strong> for <strong>model copy/deploy</strong>; dive-deeped and stabilized <strong>shared-service delivery</strong> and documented safer <strong>DynamoDB schema-change mechanisms</strong>.</li>
                 </ul>
 
             </div>
@@ -47,9 +48,20 @@
                 <h3 class="project-title black-title">Agentforce (GenAI Agent Platform)</h3>
                 <ul>
                     <li>Delivered <strong>plan-then-execute agents</strong> (<strong>Java/Python</strong>, <strong>LangChain</strong>, <strong>Gemini</strong>) that query Salesforce data and trigger workflows, cutting insight-surfacing time <strong>~90%</strong>.</li>
-                    <li>Instrumented <strong>fine-grained latency/success telemetry</strong> and <strong>A/B prompt</strong> experiments, lifting task success <strong>82% to 94%</strong>; added <strong>PII masking/rehydration</strong> into the pipeline.</li>
-                    <li>Hardened the agent runtime for reliability with <strong>timeouts</strong>, <strong>retries/backoff</strong>, <strong>circuit breakers</strong>, <strong>per-tool rate limits</strong>, and <strong>embedding/prompt caches</strong> - cut user-visible failures <strong>~55%</strong> (<strong>3.6% to 1.6%</strong>), improved <strong>p95 latency ~22%</strong>, and kept task success within <strong>+/-1 pp</strong> across <strong>3 model/provider incidents</strong>.</li>
-                    <li>Implemented <strong>cost governance</strong> and <strong>dynamic model routing</strong> (<strong>small-to-large fallback</strong>, <strong>context budgeting</strong>, <strong>tool-only paths</strong>) with quality holdouts - reduced <strong>tokens/session ~30%</strong> (median) and <strong>LLM spend ~25%</strong>, with <strong><=1 pp</strong> change in answer acceptance; added <strong>tier-based spend caps</strong> and <strong>audit logs</strong>.</li>
+                    <li>Instrumented <strong>fine-grained latency/success telemetry</strong> and ran <strong>A/B prompt experiments</strong>, lifting task success <strong>82% to 94%</strong>; added <strong>PII masking/rehydration</strong> into the pipeline.</li>
+                    <li>Hardened the <strong>agent runtime</strong> and <strong>cost governance</strong> (<strong>timeouts</strong>, <strong>retries/backoff</strong>, <strong>circuit breakers</strong>, <strong>per-tool rate limits</strong>, <strong>embedding/prompt caches</strong>, <strong>dynamic model routing</strong>) to cut user-visible failures <strong>~55%</strong> (<strong>3.6%→1.6%</strong>), improve <strong>p95 latency ~22%</strong>, and reduce <strong>tokens/session ~30%</strong> and <strong>LLM spend ~25%</strong> with <strong>&lt;=1 pp</strong> acceptance impact.</li>
+                </ul>
+
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <p class="company">Project: AlphaPolicy — Probabilistic alpha model + learned portfolio policy (PyTorch) <span class="date">2025</span></p>
+                </div>
+                <p class="project-title"><a href="https://ai.stock.lumorik.com" target="_blank" rel="noopener noreferrer">ai.stock.lumorik.com</a> | <a href="https://github.com/MaCoredroid/alphapolicy" target="_blank" rel="noopener noreferrer">github.com/MaCoredroid/alphapolicy</a></p>
+                <ul>
+                    <li>Built a <strong>two-stage multi-asset pipeline</strong>: <strong>distributional return forecasting</strong> (ordinal/histogram head; CE+CRPS with tail-weighting) feeding a <strong>cross-sectional Transformer</strong> portfolio policy optimizing <strong>differentiable Sharpe</strong> with <strong>turnover/cost constraints</strong>.</li>
+                    <li>Implemented <strong>mask-aware multi-ticker training/inference</strong> and reproducible evaluation with explicit <strong>leakage controls</strong> (train-only normalization, split-aware masking), caching, and <strong>audit-friendly experiment logging</strong>.</li>
                 </ul>
 
             </div>
@@ -77,7 +89,7 @@
 
             </div>
             
-            <p class="skills-used"><strong>Skills:</strong> <strong>C++</strong>, <strong>Java</strong>, <strong>Python</strong>, <strong>JavaScript</strong>, <strong>Go</strong>, <strong>SQL</strong>, <strong>Spring Boot</strong>, <strong>FastAPI</strong>, <strong>React.js</strong>, <strong>LangChain</strong>, <strong>LLM</strong>, <strong>GenAI</strong>, <strong>OpenAI</strong>, <strong>RAG</strong>, <strong>Qdrant</strong>, <strong>Docker</strong>, <strong>Kubernetes</strong>, <strong>GCP</strong>, <strong>PostgreSQL</strong>, <strong>Elastic Stack</strong></p>
+            <p class="skills-used"><strong>Skills:</strong> <strong>Python</strong>, <strong>PyTorch</strong>, <strong>Transformers</strong>, <strong>NumPy/Pandas</strong>, <strong>C++</strong>, <strong>Java</strong>, <strong>Go</strong>, <strong>SQL</strong>, <strong>FastAPI</strong>, <strong>LangChain</strong>, <strong>LLM/GenAI</strong>, <strong>RAG</strong>, <strong>Qdrant</strong>, <strong>Docker</strong>, <strong>Kubernetes</strong>, <strong>AWS/GCP</strong>, <strong>PostgreSQL</strong>, <strong>Elastic Stack</strong></p>
        
         </section>
     </div>
